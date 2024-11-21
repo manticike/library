@@ -40,7 +40,7 @@ function displayBooks() {
 
     // Add the book details to the card
     card.innerHTML = `
-    <h3>Title: ${book.title}</h3>
+    <h3>${book.title}</h3>
     <p><strong>Author:</strong> ${book.author}</p>
     <p><strong>Genre:</strong> ${book.genre}</p>
     <p><strong>Year:</strong> ${book.yearPublished}</p>
