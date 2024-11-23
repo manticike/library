@@ -9,8 +9,28 @@
 <body>
   <nav></nav>
   <main id="bookContainer">
-
+    <!-- The Cards will be add dynamically with JavaScript-->
   </main>
+  <button id="newBook">New Book</button>
+
+  <dialog id="dialogBox">
+    <form action="" id="bookForm">
+      <label for="title">Book Title</label>
+      <input type="text" name="title" id="title">
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author">
+      <label for="pages">Pages</label>
+      <input type="number" name="pages" id="pages">
+      <label for="genre">Genre</label>
+      <input type="text" id="genre">
+      <label for="yearPublished">Year Published</label>
+      <input type="number" name="yearPublished" id="yearPublished">
+      <label for="isRead">Have You Read It?
+      <input type="checkbox" name="isRead" id="read"></label>
+      <button type="submit" id="submit">Add Book</button>
+      <button id="closeDialog">Close</button>
+    </form>
+  </dialog>
 <script src="index.js"></script>
 </body>
 </html>

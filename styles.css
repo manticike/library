@@ -31,3 +31,53 @@
   margin: 4px 0;
   color: #555;
 }
+
+/* Style the button to open dialog*/
+#newBook {
+  width: 80%;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Style the dialog to take up the full screen*/
+dialog::backdrop {
+  /* display: none; */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* Style the form inside the dialog */
+form {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form fields */
+form input, textarea, button {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
